@@ -10,3 +10,4 @@
 *.out
 *.blg
 *.bbl
+.DS_Store

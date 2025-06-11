@@ -1,0 +1,310 @@
+\documentclass[10pt, oneside]{article}
+\usepackage{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage{changepage} 
+\usepackage[pdftex]{graphicx}
+\usepackage{multicol}
+\usepackage{ gensymb }
+
+\usepackage{enumitem} 
+\setlist{leftmargin=3mm}
+
+\usepackage{dcolumn}
+
+\makeatletter 
+
+\newlength\tdima
+\newcommand\tabfill[1]{%
+      \setlength\tdima{\linewidth}%
+      \addtolength\tdima{\@totalleftmargin}%
+      \addtolength\tdima{-\dimen\@curtab}%
+      \parbox[t]{\tdima}{#1\ifhmode\strut\fi}}
+
+\newcommand\mytabs{\hspace*{1cm}\=\hspace{1cm}\=\hspace{1cm}\=\hspace{1cm}\=\hspace{1cm}\=\hspace{1cm}\=\hspace{1cm}\=\hspace{1cm}\=\hspace{1cm}\=\hspace{1cm}}
+\newenvironment{mysec}[1][\mytabs]
+  {\begin{tabbing}#1\kill\ignorespaces}
+  {\end{tabbing}}
+ 
+\makeatother
+  
+\usepackage{titlesec}
+
+\newcommand{\lyxrightaddress}[1]{
+\par {\raggedleft \begin{tabular}{l}\ignorespaces
+#1
+\end{tabular}
+\vspace{1.4em}
+\par}
+}
+
+\geometry{letterpaper}
+\geometry{verbose,tmargin=1.3cm,bmargin=1.3cm,lmargin=1.2cm,rmargin=1.2cm}
+% Activate to surpress page number on first page:
+\thispagestyle{empty}
+
+\usepackage{soul}
+\usepackage{times}
+
+\usepackage{ifthen,xcolor}
+\newlength{\tabcont}
+\newcommand{\tab}[1]{%
+\settowidth{\tabcont}{#1}%
+\ifthenelse{\lengthtest{\tabcont < .25\linewidth}}%
+{\makebox[.25\linewidth][l]{#1}\ignorespaces}%
+}%
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=black}
+ 
+\urlstyle{same}
+
+\usepackage{titlesec}
+\titleformat{\subsection}
+  {\large\scshape\bfseries}
+  {\thesubsection}{1em}{}
+
+\setlength{\columnsep}{0pt}
+\hypersetup{
+     colorlinks   = true,
+     urlcolor    = blue
+}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagenumbering{gobble}
+
+\begin{center}
+
+\begin{picture}(1000,1)
+    \put(0,-20){\includegraphics[width=\textwidth]{img/formalheader.png}}
+\end{picture}
+
+\vspace{10mm}
+{\footnotesize UNIVERSITY OF CALIFORNIA, BERKELEY \hfill DEPARTMENT OF AGRICULTURAL AND RESOURCE ECONOMICS} \\\hrule  \vspace{10mm}
+{\large \textbf{LUCY HACKETT}} \\
+\end{center} 
+
+%%% CONTACT INFORMATION
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Contact \\ Information}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+Giannini 241, UC Berkeley \\
+\href{mailto:lucy_hackett@berkeley.edu}{lucy\_hackett@berkeley.edu} \\
+\href{lghackett.github.io}{lghackett.github.io} \\
++1-(510)-3263451
+\end{minipage}\vspace{5mm}
+
+%%% DOCTORAL STUDIES
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Doctoral Studies}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+University of California, Berkeley\\
+PhD, Agricultural and Resource Economics, Expected completion May 2026 \\
+\textsc{Dissertation:}  ``Title'' \\ 
+~\\ 
+\textsc{Primary Fields:} Environment, Development, Urban \\
+\textsc{Secondary Fields:} Spatial Economics 
+\begin{multicols}{2}
+\begin{itemize}[noitemsep,nolistsep]
+\item[] \underline{Professor Marco Gonzalez-Navarro} \\
+\href{mailto:marcog@berkeley.edu}{marcog@berkeley.edu} \\ 
++1 (510) 390-4720 \\
+Department of Agricultural
+\item[] \hspace{4mm} \& Resource Economics \\
+\item[] \underline{Professor Lucas Davis} \\
+\href{mailto:lwdavis@berkeley.edu}{lwdavis@berkeley.edu} \\
++1 (999) Phone \\
+Haas School of Business \\ 
+\item[] \underline{Professor Kirill Borusyak} \\
+\href{k.borusyak@berkeley.edu}{k.borusyak@berkeley.edu} \\ 
++1 (999) Phone \\
+Department of Agricultural
+\item[] \hspace{4mm} \& Resource Economics\\
+\item[] \underline{Professor Joseph Shapiro} \\
+\href{mailto:oseph.shapiro@berkeley.edu}{oseph.shapiro@berkeley.edu} \\ 
++1 (999) Phone \\
+Department of Agricultural
+\item[] \hspace{4mm} \& Resource Economics
+\end{itemize}
+\end{multicols}
+\end{minipage}\vspace{5mm}
+
+%%% PLACEMENT OFFICERS
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Placement\\ Officers}
+\end{minipage}\hspace{0.04\linewidth}
+\begin{minipage}[t]{0.9\linewidth}~\vspace{-9mm}
+\begin{multicols}{3}
+\begin{itemize}[noitemsep,nolistsep]
+\item[] \underline{Professor Sofia Villas-Boas} \\
+\href{mailto:sberto@berkeley.edu}{sberto@berkeley.edu} \\
++1 (510) 409-4341 \\
+\item[] \underline{Professor Marco Gonzalez-Navarro} \\
+\href{mailto:marcog@berkeley.edu}{marcog@berkeley.edu} \\
++1 (510) 390-4720 \\
+\item[] \underline{Diana Lazo} \\
+\href{mailto:lazo@berkeley.edu}{lazo@berkeley.edu} \\
++1 (510) 642-3345 
+\end{itemize}
+\end{multicols}
+\end{minipage}\vspace{5mm}
+
+%%% PRIOR EDUCATION
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Prior \\ Education}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+\begin{mysec} 
+\textbf{University of Oregon} \>\>\>\>\> B.Sc. in Economics and Spanish Literature \` 2015 
+\end{mysec} 
+\begin{mysec} 
+    \textbf{CIDE} \>\>\>\>\> Master's Degree in Economics \` 2018
+    \end{mysec} 
+\end{minipage}\vspace{5mm}
+
+%%% TEACHING
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Teaching}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+\begin{mysec} 
+    \textbf{UC Berkeley} \>\>\>Instructor, \emph{Microeconomics}  \` 2022, 2023 \\
+    \>\>\> Master's in Development Practice
+    \end{mysec}
+\begin{mysec} 
+\textbf{UC Berkeley} \>\>\>Teaching Assistant, \emph{Graduate Econometrics}  \` 2021, 2022, 2023 \\
+\>\>\> PhD Agricultural and Resource Economics
+\end{mysec}
+\begin{mysec} 
+\textbf{UC Berkeley} \>\>\>Instructor, \emph{Training for New Graduate Student Instructors}  \` 2021, 2022, 2023 \\
+\>\>\> UC Berkeley 
+\end{mysec}
+\begin{mysec} 
+    \textbf{CIDE} \>\>\>Instructor, \emph{Graduate Macroeconomics}  \` 2020 \\
+    \>\>\> Master's in Economics 
+\end{mysec}
+\begin{mysec} 
+    \textbf{CIDE} \>\>\>Instructor, \emph{Macroeconomics}  \` 2019 \\
+    \>\>\> Economics (undergraduate)
+\end{mysec}
+\begin{mysec} 
+    \textbf{CIDE} \>\>\>Teaching Assistant, \emph{Macroeconomics}  \` 2017, 2018, 2019 \\
+    \>\>\> Economics (Graduate and undergraduate)
+\end{mysec}
+\end{minipage}\vspace{5mm}
+
+%%% LANGUAGES
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Languages}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+English (native), Spanish (fluent)
+\end{minipage}\vspace{5mm}
+
+%%% GRANTS, FELLOWSHIPS, AWARDS
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Grants, Fellowships, and Awards}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+\begin{mysec} 
+	2025 \>\>\tabfill{UC Dissertation Fellowship (\$37,000)} \\
+    2024 \>\>\tabfill{Clausen Center for International Trade Research Grant (\$5,000)} \\
+    2024 \>\>\tabfill{Fisher Center for Real Estate Research Grant  (\$30,000)} \\
+	2023 \>\>\tabfill{Fisher Center for Real Estate Research Grant  (\$30,000)} \\
+    2023 \>\>\tabfill{Giannini Foundation Minigrant  (\$35,000)} \\
+    2022 \>\>\tabfill{ARE travel grant  (\$2,000)} \\
+    2021 \>\>\tabfill{Tinker Field Research Grant (\$2,000)}\\ 
+    2021 \>\>\tabfill{Outstanding Graduate Student Instructor Award}
+\end{mysec} 
+\end{minipage}\vspace{5mm}
+
+%%% RESEARCH PAPERS
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Research \\ Papers}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+\textbf{``Title'' (\textsc{Job Market Paper})} \\
+Abstract.\\~\\
+\textbf{``Title.''} \emph{Revision requested by \emph{Journal}. Date YYYY.} \href{address}{\color{blue}{text}}. \\
+Abstract
+\end{minipage}\vspace{5mm}
+
+
+%%% RESEARCH IN PROGRESS
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Research in Progress}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+\textbf{``Title''} with Z. Coauthor \\ 
+\emph{Pre-analysis plan filed with the AEA RCT Registry} (\href{link}{\color{blue}{\#AEARCTR-ZZZZZZZ}}). \\
+Abstract. \\~\\
+\textbf{``Title''} with Z. Couthor. \\
+Abstract. \\~\\
+\end{minipage}\vspace{5mm} 
+
+%%% PRIOR EMPLOYMENT
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Prior \\ Employment}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+\textbf{UC Berkeley}, Graduate Student Researcher (Marco Gonzalez-Navarro) \hfill 2023-2025 \\
+\textbf{UC Berkeley}, Graduate Student Researcher (Ethan Ligon) \hfill 2022 \\
+\textbf{UC Berkeley}, Graduate Student Researcher (Ellen Bruno) \hfill 2023 \\
+\textbf{National Laboratory for Public Policy (LNPP)}, Analyst \hfill 2018-2020 \\
+\end{minipage}\vspace{5mm}
+
+%%% TALKS
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Talks}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+\begin{mysec} 
+    2025 \>\> \tabfill{AERE Summer meeting} \\
+	2024 \>\> \tabfill{LACEA Urban Workshop} \\
+    2024 \>\> \tabfill{UC Berkeley Development workshop} \\
+    2023, 2024 \>\> \tabfill{UC Berkeley Trade workshop} \\
+\end{mysec} 
+\end{minipage}\vspace{5mm}
+
+%%% REFEREEING
+% \begin{minipage}[t]{0.1\linewidth}
+% \textbf{Refereeing}
+% \end{minipage}\hspace{0.05\linewidth}
+% \begin{minipage}[t]{0.8\linewidth}
+% \emph{Journal of Excellent Papers}
+% \end{minipage}\vspace{5mm}
+
+%%% ACTIVITIES
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Activities}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+\begin{mysec}
+    2024 \>\> Berkeley Economists for Equity (BEE) Mentor\\ 
+    2023 \>\> Department of Agricultural and Resource Economics Graduate Admissions Committee \\
+    2022 \>\> Department of Agricultural and Resource Economics Search Committee \\
+    2020 - 2022 \>\> Department of Agricultural and Resource Economics DEI committee \\
+
+
+\end{mysec}
+\end{minipage}\vspace{5mm}
+
+%%% ANY OTHER ITEMS
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{}
+\end{minipage}\hspace{0.05\linewidth}
+\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+
+
+\end{minipage}\vspace{5mm}
+
+
+\end{document}
