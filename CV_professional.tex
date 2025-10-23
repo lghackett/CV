@@ -1,0 +1,94 @@
+\documentclass[10pt, a4paper]{letter}
+
+% moderncv options
+\moderncvstyle{casual} % or 'banking', 'classic', 'oldstyle'
+\moderncvcolor{blue}   % or 'blue', 'orange', 'green', 'red'
+
+% Adjust margins for a more modern, single-page look
+\usepackage[scale=0.8]{geometry}
+
+% Personal details
+\name{Lucy}{Hackett}
+\title{Economist}
+\address{Giannini 207, UC Berkeley}
+\phone{+1 (510) 326-3451}
+\email{lucy\_hackett@berkeley.edu}
+\homepage{https://lghackett.github.io}
+% Assuming you would add a LinkedIn for the private sector
+%\social[linkedin]{[Your LinkedIn Profile]}
+%\social[github]{lghackett} % Using your GitHub handle
+
+% Custom commands for visual consistency
+\newcommand{\projectrole}[1]{\textbf{\small #1}}
+\newcommand{\projectimpact}[1]{\textit{\small #1}}
+
+\begin{document}
+
+% Custom command for sub-bullets
+\setlist[itemize, 2]{label=\textendash}
+
+\makecvtitle
+
+% --- PROFESSIONAL SUMMARY ---
+\section{Professional Summary}
+Highly analytical and results-driven PhD Candidate in \textbf{Agricultural and Resource Economics} with a strong foundation in econometric modeling, spatial analysis, and advanced statistical methods. Seeking to leverage expertise in \textbf{causal inference}, \textbf{big data analysis}, and \textbf{economic modeling} to solve complex business problems in data science, tech, or consulting. Proven ability to translate complex research into actionable insights, communicate findings to diverse audiences, and manage multiple high-impact projects. 
+
+% --- CORE COMPETENCIES ---
+\section{Core Competencies}
+\begin{itemize}
+    \item \textbf{Econometrics \& Statistical Modeling:} Causal Inference (DiD, RDD, IV), Spatial Econometrics, Time-Series, Machine Learning Fundamentals.
+    \item \textbf{Data Analysis \& Programming:} Expert in \textbf{Stata, R, and Python} (Pandas, NumPy, Scikit-learn, GeoPandas). Proficient in \textbf{LaTeX}.
+    \item \textbf{Data Visualization \& GIS:} Experience with Geographic Information Systems (GIS) and generating clear, professional data visualizations.
+    \item \textbf{Domain Expertise:} Environmental Economics, Urban/Spatial Economics, Policy Evaluation, Market Analysis, Policy Evaluation.
+\end{itemize}
+
+% --- SELECTED PROJECTS & RESEARCH (Showcasing Impact) ---
+\section{Selected Projects \& Research}
+\subsection{Quantifying Environmental Risk \& Market Inefficiency in Urban Housing}
+\cvlistitem{\projectrole{Role:} Designed an \textbf{equilibrium housing market model} to quantify the economic costs and market response to environmental hazards (land subsidence) in Mexico City}
+\cvlistitem{\projectrole{Methodology:} Exploited quasi-random variation in sinking intensity using \textbf{spatial econometric methods} to estimate the impact on property values.}
+\cvlistitem{\projectrole{Key Results:} Found that subsidence imposes an estimated \textbf{\$33 billion USD} in economic costs, with \textbf{12\%} due to information frictions that inefficiently increase housing stock in risky areas.}
+\cvlistitem{\projectrole{Impact:} Provided evidence on the financial externality of groundwater depletion and the need for improved public information to enhance market efficiency.}
+
+\subsection{Systematic Evaluation of Gains from Water Trading Models}
+\cvlistitem{\projectrole{Objective:} Conducted a \textbf{systematic meta-analysis} of peer-reviewed literature to evaluate the accuracy and policy relevance of water trading models.}
+\cvlistitem{\projectrole{Methodology:} Developed a framework to assess how models incorporate key local context factors (e.g., third-party impacts, transaction costs, legal environment).}
+\cvlistitem{\projectrole{Finding:} Estimates \textbf{vary widely} and are often less likely to account for critical real-world features like transaction costs, impacting policy interpretation.}
+
+\subsection{Modeling Structural Vulnerability to Environmental Hazards}
+\cvlistitem{\projectrole{Methodology:} Combined novel \textbf{plot-specific differential subsidence estimates} with a representative resident survey to estimate \textbf{structural fragility curves} and damage thresholds[cite: 109].}
+\cvlistitem{\projectrole{Impact:} Extrapolated findings to a city-wide analysis to calculate damages and vulnerability at a city-block level, providing a tool for \textbf{city planning and risk assessment}[cite: 109].}
+
+% --- RESEARCH & PROFESSIONAL EXPERIENCE ---
+\section{Research \& Professional Experience}
+\cvlistitem{\textbf{Graduate Student Researcher}, UC Berkeley (Various PIs) \hfill 2021–2025 [cite: 108]}
+\begin{itemize}
+    \item Conducted advanced quantitative research, including model development and data analysis for multiple faculty across departments[cite: 108].
+    \item Managed large, complex datasets for projects in environmental, urban, and development economics[cite: 108].
+\end{itemize}
+
+\cvlistitem{\textbf{Analyst}, National Laboratory for Public Policy (LNPP) \hfill 2018–2020 [cite: 108]}
+\begin{itemize}
+    \item Applied economic principles and quantitative methods to evaluate public policy outcomes[cite: 108].
+\end{itemize}
+
+% --- EDUCATION ---
+\section{Education}
+\cventry{Expected May 2026}{PhD, Agricultural and Resource Economics}{University of California, Berkeley}{Berkeley, CA}{}{Dissertation: "Essays in Environmental and Urban Economics" [cite: 14, 15]}
+\cventry{2018}{Master's Degree in Economics}{CIDE}{Mexico City, Mexico}{}{Best applied thesis, Class of 2018 [cite: 41, 95]}
+\cventry{}{B.Sc. in Economics and Spanish Literature}{University of Oregon}{Eugene, OR}{}{Honors: Phi Beta Kappa [cite: 38, 96]}
+
+% --- GRANTS, FELLOWSHIPS \& AWARDS (Demonstrating Competitiveness) ---
+\section{Select Grants \& Awards}
+\cvlistitem{\textbf{UC Dissertation Fellowship} (\$37,000) [cite: 87]}
+\cvlistitem{\textbf{Fisher Center for Real Estate Research Grant} (\$15,000, awarded twice) [cite: 90, 91]}
+\cvlistitem{\textbf{Giannini Foundation Minigrant} (\$35,000) [cite: 91]}
+\cvlistitem{CEGA Development Economics Challenge Grant (\$5,000) [cite: 88]}
+\cvlistitem{Outstanding Graduate Student Instructor Award [cite: 94]}
+
+% --- TEACHING & MENTORING (For Communication/Leadership Skills) ---
+\section{Teaching \& Mentoring Leadership}
+\cvlistitem{\textbf{Instructor, Training for New Graduate Student Instructors}, UC Berkeley:} Focused on developing pedagogy and classroom management skills.
+\cvlistitem{\textbf{Teaching Fellow, Graduate Econometrics}, UC Berkeley:} Led instructional sections focused on applied regression and statistical modeling.
+\cvlistitem{\textbf{Berkeley Economists for Equity (BEE) Mentor}}
+\end{document}
