@@ -1,0 +1,334 @@
+\documentclass[10pt, oneside]{article}
+\usepackage{geometry}
+
+%\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{changepage} 
+\usepackage[pdftex]{graphicx}
+\usepackage{multicol}
+\usepackage{ gensymb }
+\usepackage[english,spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem} 
+\setlist{leftmargin=3mm}
+
+\usepackage{dcolumn}
+
+\makeatletter 
+
+\newlength\tdima
+\newcommand\tabfill[1]{%
+      \setlength\tdima{\linewidth}%
+      \addtolength\tdima{\@totalleftmargin}%
+      \addtolength\tdima{-\dimen\@curtab}%
+      \parbox[t]{\tdima}{#1\ifhmode\strut\fi}}
+
+\newcommand\mytabs{\hspace*{1cm}\=\hspace{1cm}\=\hspace{1cm}\=\hspace{1cm}\=\hspace{1cm}\=\hspace{1cm}\=\hspace{1cm}\=\hspace{1cm}\=\hspace{1cm}\=\hspace{1cm}}
+\newenvironment{mysec}[1][\mytabs]
+  {\begin{tabbing}#1\kill\ignorespaces}
+  {\end{tabbing}}
+ 
+\makeatother
+  
+\usepackage{titlesec}
+
+\newcommand{\lyxrightaddress}[1]{
+\par {\raggedleft \begin{tabular}{l}\ignorespaces
+#1
+\end{tabular}
+\vspace{1.4em}
+\par}
+}
+
+\geometry{letterpaper}
+\geometry{verbose,tmargin=1.3cm,bmargin=1.3cm,lmargin=1.2cm,rmargin=1.2cm}
+% Activate to surpress page number on first page:
+\thispagestyle{empty}
+
+\usepackage{soul}
+\usepackage{times}
+
+\usepackage{ifthen,xcolor}
+\newlength{\tabcont}
+\newcommand{\tab}[1]{%
+\settowidth{\tabcont}{#1}%
+\ifthenelse{\lengthtest{\tabcont < .25\linewidth}}%
+{\makebox[.25\linewidth][l]{#1}\ignorespaces}%
+}%
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=black}
+ 
+\urlstyle{same}
+
+\usepackage{titlesec}
+\titleformat{\subsection}
+  {\large\scshape\bfseries}
+  {\thesubsection}{1em}{}
+
+\setlength{\columnsep}{0pt}
+\hypersetup{
+     colorlinks   = true,
+     urlcolor    = blue
+}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagenumbering{gobble}
+
+\begin{center}
+
+\begin{picture}(1000,1)
+    \put(0,-20){\includegraphics[width=\textwidth]{img/formalheader.png}}
+\end{picture}
+
+\vspace{10mm}
+{ Research Economist \hfill Economic Research Division, Banco de México} \\\hrule  \vspace{10mm}
+{\Large \textbf{Lucy Hackett}} \\
+\end{center} 
+
+%%% CONTACT INFORMATION
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Contact \\ Information}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+lucy.hackettg [at] banxico.org.mx \\
+\href{https://lghackett.github.io}{https://lghackett.github.io} \\
++1-(510)-326-3451
+\end{minipage}\vspace{5mm}
+
+%%% DOCTORAL STUDIES
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Doctoral Studies}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+University of California, Berkeley\\
+PhD, Agricultural and Resource Economics, May 2026 \\
+\textsc{Dissertation:}  ``Essays in Environmental and Urban Economics'' \\ 
+~\\ 
+\textsc{Primary Fields:} Environment \\
+\textsc{Secondary Fields:} Development, Urban/Spatial Economics \\
+\vspace{0.3cm} 
+\end{minipage}
+% \begin{minipage}[t]{0.5\linewidth}
+% \begin{itemize}[noitemsep,nolistsep]
+% \item[] \underline{Associate Professor Marco Gonzalez-Navarro} \\
+% \href{mailto:marcog@berkeley.edu}{marcog@berkeley.edu} \\ 
+% +1 (510) 390-4720 \\
+% Department of Agricultural
+% \item[] \hspace{4mm} \& Resource Economics \\
+% \item[] \underline{Professor Lucas Davis} \\
+% \href{mailto:lwdavis@berkeley.edu}{lwdavis@berkeley.edu} \\
+% %+1 (999) Phone \\
+% Haas School of Business 
+% \end{itemize}
+% \end{minipage}
+% \begin{minipage}[t]{0.4\linewidth}
+% \begin{itemize}[noitemsep,nolistsep]
+%     \item[] \underline{Assistant Professor Kirill Borusyak} \\
+% \href{k.borusyak@berkeley.edu}{k.borusyak@berkeley.edu} \\ 
+% %+1 (999) Phone \\
+% Department of Agricultural
+% \item[] \hspace{4mm} \& Resource Economics\\\\ 
+% \item[] \underline{Professor Joseph Shapiro} \\
+% \href{mailto:joseph.shapiro@berkeley.edu}{joseph.shapiro@berkeley.edu} \\ 
+% %+1 (999) Phone \\
+% Department of Agricultural
+% \item[] \hspace{4mm} \& Resource Economics
+% \end{itemize}
+% \end{minipage}
+% \end{minipage}\vspace{5mm}
+
+% %%% PLACEMENT OFFICERS
+% \begin{minipage}[t]{0.1\linewidth}
+% \textbf{Placement\\ Officers}
+% \end{minipage}\hspace{0.04\linewidth}
+% \begin{minipage}[t]{0.9\linewidth}~\vspace{-9mm}
+% \begin{multicols}{3}
+% \begin{itemize}[noitemsep,nolistsep]
+% \item[] \underline{Professor Sofia Villas-Boas} \\
+% \href{mailto:sberto@berkeley.edu}{sberto@berkeley.edu} \\
+% +1 (510) 409-4341 \\
+% \item[] \underline{Professor Marco Gonzalez-Navarro} \\
+% \href{mailto:marcog@berkeley.edu}{marcog@berkeley.edu} \\
+% +1 (510) 390-4720 \\
+% \item[] \underline{Diana Lazo} \\
+% \href{mailto:lazo@berkeley.edu}{lazo@berkeley.edu} \\
+% +1 (510) 642-3345 
+% \end{itemize}
+% \end{multicols}
+% \end{minipage}\vspace{5mm}
+
+%%% PRIOR EDUCATION
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Prior \\ Education}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+\begin{mysec} 
+    \textbf{CIDE} \>\>\>\>\> Master's Degree in Economics \` 2018
+    \end{mysec} 
+\begin{mysec} 
+\textbf{University of Oregon} \>\>\>\>\> B.Sc. in Economics and Spanish Literature \` 2015 
+\end{mysec} 
+\end{minipage}\vspace{5mm}
+
+%%% TEACHING
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Teaching}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+\begin{mysec} 
+    \textbf{UC Berkeley} \>\>\>Instructor, \emph{Microeconomics}  \` 2022, 2023 \\
+    \>\>\> Master's in Development Practice
+    \end{mysec}
+\begin{mysec} 
+\textbf{UC Berkeley} \>\>\>Teaching Assistant, \emph{Graduate Econometrics}  \` 2021, 2022, 2023 \\
+\>\>\> PhD Agricultural and Resource Economics
+\end{mysec}
+\begin{mysec} 
+\textbf{UC Berkeley} \>\>\>Instructor, \emph{Training for New Graduate Student Instructors}  \` 2021, 2022, 2023 \\
+\>\>\> UC Berkeley 
+\end{mysec}
+\begin{mysec} 
+    \textbf{CIDE} \>\>\>Instructor, \emph{Graduate Macroeconomics}  \` 2020 \\
+    \>\>\> Master's in Economics 
+\end{mysec}
+\begin{mysec} 
+    \textbf{CIDE} \>\>\>Instructor, \emph{Macroeconomics}  \` 2019 \\
+    \>\>\> Economics (undergraduate)
+\end{mysec}
+\begin{mysec} 
+    \textbf{CIDE} \>\>\>Teaching Assistant, \emph{Macroeconomics}  \` 2017, 2018, 2019 \\
+    \>\>\> Economics (Graduate and undergraduate)
+\end{mysec}
+\end{minipage}\vspace{5mm}
+
+%%% LANGUAGES
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Languages}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+English (native), Spanish (fluent)
+\end{minipage}\vspace{5mm}
+
+%%% GRANTS, FELLOWSHIPS, AWARDS
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Grants, Fellowships, and Awards}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+\begin{mysec} 
+    2026 \>\>\tabfill{CAF Development Bank, Housing in LAC research grant (\$15,000)}\\ 
+	2025 \>\>\tabfill{UC Dissertation Fellowship (\$37,000)} \\
+    2025 \>\>\tabfill{CEGA Development Economics Challenge Grant (\$5,000)} \\
+    2024 \>\>\tabfill{Clausen Center for International Trade Research Grant (\$5,000)} \\
+    2024 \>\>\tabfill{Fisher Center for Real Estate Research Grant  (\$15,000)} \\
+	2023 \>\>\tabfill{Fisher Center for Real Estate Research Grant  (\$15,000)} \\
+    2023 \>\>\tabfill{Giannini Foundation Minigrant  (\$35,000)} \\
+    2022 \>\>\tabfill{ARE travel grant  (\$2,000)} \\
+    2021 \>\>\tabfill{Tinker Field Research Grant (\$2,000)}\\ 
+    2021 \>\>\tabfill{Outstanding Graduate Student Instructor Award}\\ 
+    2018 \>\>\tabfill{Best applied thesis, Class of 2018, CIDE}\\ 
+    2015 \>\>\tabfill{Phi Beta Kappa}\\ 
+    2015 \>\>\tabfill{Oregon 6}
+\end{mysec} 
+\end{minipage}\vspace{5mm}
+
+%%% RESEARCH PAPERS
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Research \\ Papers}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+\textit{``Land Subsidence: Environmental risk in housing markets in Mexico City''} (\textsc{Job Market Paper}), with Carolina Rodríguez Zamora \\ 
+
+\textit{``Estimating the Gains from Water Trade: A Systematic
+Evaluation of Modeling Considerations''} with Nell Green Nylen, Ellen Bruno, Andrew Ayers, Michael Kiparsky, Josué Medellín-Azuara, and Sarah Null \\ 
+\emph{Forthcoming in the Review of Environmental Economics and Policy.} \\
+
+\textit{``Facilitated Enrollment in public health insurance: Effects on prenatal care and birth outcomes''} with Janet Currie and Fernanda Márquez Padilla \\ 
+\emph{Forthcoming in the Journal of Labor Economics.} \\
+\end{minipage}\vspace{5mm}
+
+
+%%% RESEARCH IN PROGRESS
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Research in Progress}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+\textit{``Sprawl and the costs and benefits of promoting compact cities: Evidence from Mexico''} with Rodolfo Oviedo Moguel \\ 
+
+\textit{``The hidden costs of intermittent water: Evidence from Jordan''} with Bailey Palmer and Abdulrazzak Tamim\\ 
+
+\textit{``Rural road upgrading and transportation in Rwanda''} with Marco Gonzalez-Navarro, Florence Kondylis, John Loeser, and Maria Ruth Jones\\ 
+
+\textit{``Differential subsidence, damages, and fragility: Evidence from a systematic analysis of structural vulnerability in Mexico City''} with Enrique Fernández-Torres\\ 
+\end{minipage}\\ 
+%%% TALKS
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Talks}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+\begin{mysec} 
+    2026 \>\> \tabfill{NBER Summer Institute, Urban Economics} \\
+    2026 \>\> \tabfill{World Bank Urbanization and Development Conference} \\
+    2025 \>\> \tabfill{NEUDC} \\
+    2025 \>\> \tabfill{Cities \& Development Workshop, Harvard (\textit{upcoming})} \\
+    2025 \>\> \tabfill{The Occasional Workshop of Environmental and Resource Economics (\textit{upcoming})} \\
+    2025 \>\> \tabfill{North American Meeting of the Urban Economics Association} \\
+    2025 \>\> \tabfill{Environment Week at the London School of Economics} \\
+    2025 \>\> \tabfill{AERE Summer meeting} \\
+	2024 \>\> \tabfill{LACEA Urban Workshop} \\
+    2024 \>\> \tabfill{\textit{SobreMéxico} Conference,  Universidad Iberoamericana}\\ 
+    2024 \>\> \tabfill{UC Berkeley Development workshop} \\
+    2023, 2024 \>\> \tabfill{UC Berkeley Trade workshop} \\
+\end{mysec} 
+\end{minipage}\vspace{5mm}
+
+%%% REFEREEING
+% \begin{minipage}[t]{0.1\linewidth}
+% \textbf{Refereeing}
+% \end{minipage}\hspace{0.05\linewidth}
+% \begin{minipage}[t]{0.8\linewidth}
+% \emph{Journal of Excellent Papers}
+% \end{minipage}\vspace{5mm}
+
+%%% ACTIVITIES
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Activities}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+\begin{mysec}
+    2024 \>\> Berkeley Economists for Equity (BEE) Mentor\\ 
+    2023 \>\> Department of Agricultural and Resource Economics Graduate Admissions Committee \\
+    2022 \>\> Department of Agricultural and Resource Economics Search Committee \\
+    2020 - 2022 \>\> Department of Agricultural and Resource Economics DEI committee \\
+
+
+\end{mysec}
+\end{minipage}\vspace{5mm}
+
+
+%%% PRIOR EMPLOYMENT
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{Prior \\ Employment}
+\end{minipage}\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+\textbf{UC Berkeley}, Graduate Student Researcher (Marco Gonzalez-Navarro) \hfill 2023-2025 \\
+\textbf{UC Berkeley}, Graduate Student Researcher (Ethan Ligon) \hfill 2022 \\
+\textbf{UC Berkeley}, Graduate Student Researcher (Ellen Bruno) \hfill 2023 \\
+\textbf{UC Berkeley}, Graduate Student Researcher (Joseph Shapiro, Andrés Rodríguez-Clare) \hfill 2021 \\
+\textbf{National Laboratory for Public Policy (LNPP)}, Analyst \hfill 2018-2020 \\
+\end{minipage}\vspace{5mm}
+
+%%% ANY OTHER ITEMS
+\begin{minipage}[t]{0.1\linewidth}
+\textbf{}
+\end{minipage}\hspace{0.05\linewidth}
+\hspace{0.05\linewidth}
+\begin{minipage}[t]{0.8\linewidth}
+
+
+\end{minipage}\vspace{5mm}
+
+
+\end{document}
